@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Karar Asistanı</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+        <button onclick="toggleMode()" class="mode-btn">📱</button>
+    </div>
+
+    <h1>🤖 Karar Asistanı</h1>
+
+    <form method="POST">
+        <input type="text" name="soru" placeholder="Sorunu yaz..." required>
+        <button type="submit">Sor</button>
+    </form>
+
+    {% if cevap %}
+        <div class="sonuc">
+            {{ cevap }}
+        </div>
+    {% endif %}
+
+</div>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("mobile-mode");
+}
+</script>
+
+</body>
+</html>
+<a href="/gecmis">
+    <button type="button" class="gecmis-btn">📜 Geçmiş</button>
+</a>
+<script>
+function toggleMode() {
+    alert("BUTON ÇALIŞTI");
+    document.body.classList.toggle("mobile-mode");
+}
+</script>
+<script>
+function toggleMode() {
+    document.body.classList.toggle("app-mode");
+}
+</script>
+<a href="/logout">
+    <button type="button">Çıkış Yap</button>
+</a>
+<a href="/logout">
+    <button type="button">🚪 Çıkış Yap</button>
+</a>

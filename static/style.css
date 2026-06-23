@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 0.3s;
+}
+
+/* 💻 WEB */
+.container {
+    width: 70%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    text-align: center;
+}
+
+/* 📱 APP MODE */
+body.app-mode {
+    background: #0b0b0b;
+}
+
+body.app-mode .container {
+    width: 95%;
+    max-width: 420px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+}
+
+/* input farkı */
+body.app-mode input {
+    background: #1c1c1c;
+    color: white;
+    border: none;
+}
+.login-card{
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    text-align: center;
+}
+
+.login-card h1{
+    margin-bottom: 10px;
+}
+
+.login-card p{
+    margin-bottom: 20px;
+}
+
+.hata{
+    background: rgba(255,0,0,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geçmiş</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📜 Geçmiş Sorular</h1>
+
+    <a href="/">
+        <button>⬅ Geri Dön</button>
+    </a>
+
+    {% for item in gecmis %}
+        <div class="kart">
+            <p><b>Soru:</b> {{ item.soru }}</p>
+            <p><b>Cevap:</b> {{ item.cevap }}</p>
+        </div>
+    {% endfor %}
+
+</div>
+
+</body>
+</html>
